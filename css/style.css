@@ -53,10 +53,9 @@ img {
 
 button {
   padding: 0;
+  background-color: transparent;
 
   /* border: none; */
-
-  background-color: transparent;
 }
 
 button,
@@ -68,6 +67,17 @@ button:focus {
 /* decoration: none; */
 /* visually-hidden */
 /* display: none; */
+
+input {
+  padding: 0;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+/* input {
+  font-family: inherit;
+  padding-left: 12px;
+} */
 
 .contact-title,
 .features-title,
@@ -112,6 +122,8 @@ button:focus {
 .footer,
 .footer-contact,
 .footer-logo,
+.subscription-input,
+.subscription-btn,
 .project-btn:hover,
 .project-btn:focus {
   color: var(--text-white);
@@ -121,7 +133,8 @@ button:focus {
 .footer,
 .footer-contact,
 .footer-logo,
-.footer-link {
+.footer-link,
+.subscription-input {
   background-color: var(--back-black-light);
 }
 
@@ -130,6 +143,7 @@ button:focus {
 .team-social-link:focus,
 .footer-social-link:hover,
 .footer-social-link:focus,
+.subscription-btn,
 .project-btn:hover,
 .project-btn:focus {
   background-color: var(--text-blue);
@@ -188,7 +202,14 @@ button:focus {
 }
 
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 80px;
+  background-color: var(--text-white);
   border-bottom: 1px solid #ececec;
+  z-index: 1;
 }
 
 .logo {
@@ -334,11 +355,11 @@ button:focus {
   background: rgba(0, 0, 0, 0.2);
 
   transition: opacity 250ms var(--cubic);
+  z-index: 2;
 }
 
 .backdrop.is-hidden {
-  /* visibility: hidden; */
-
+  visibility: hidden;
   opacity: 0;
   pointer-events: none;
 }
@@ -347,9 +368,11 @@ button:focus {
   transform: translateX(-1000px) translateY(-50%);
 }
 
+/* MODAL */
+
 .modal {
-  /* display: flex;
-  flex-direction: column; */
+  display: flex;
+  flex-direction: column;
 
   position: absolute;
   top: 50%;
@@ -368,6 +391,7 @@ button:focus {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  z-index: 3;
 }
 
 .close-btn {
@@ -396,6 +420,25 @@ button:focus {
 .close-btn:hover,
 .close-btn:focus {
   fill: var(--text-blue);
+}
+textarea {
+  padding: 12px 16px;
+}
+
+.input-check {
+  /* border: 2px solid black;
+  border-radius: 2px; */
+}
+
+.check-icon use {
+  display: none;
+}
+
+.imput-check:checked {
+  border: none;
+}
+.imput-check:checked + .check-icon use {
+  display: block;
 }
 
 /* FEATURES */
@@ -722,6 +765,60 @@ button:focus {
 
 .footer-icon {
   fill: currentColor;
+}
+
+.subscription {
+  margin-left: auto;
+}
+
+.subscription-form {
+  display: flex;
+}
+
+.subscription-input {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  padding: 0 12px;
+}
+
+/* font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 20px;
+
+display: flex;
+align-items: center;
+letter-spacing: 0.03em;
+
+color: rgba(255, 255, 255, 0.6); */
+
+.subscription-btn {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+
+  display: flex;
+  padding: 10px 28px;
+  margin-top: auto;
+  margin-left: 12px;
+  align-items: center;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  height: 50px;
+}
+
+/* color: rgba(255, 255, 255, 0.6); */
+
+.send-icon {
+  width: 24px;
+  height: 24px;
+  fill: var(--text-white);
+  margin-left: 10px;
 }
 
 /* PROJECTS */
