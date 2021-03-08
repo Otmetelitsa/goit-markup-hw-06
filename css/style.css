@@ -338,6 +338,7 @@ button:focus {
 
 .backdrop.is-hidden {
   /* visibility: hidden; */
+
   opacity: 0;
   pointer-events: none;
 }
@@ -349,6 +350,7 @@ button:focus {
 .modal {
   /* display: flex;
   flex-direction: column; */
+
   position: absolute;
   top: 50%;
   left: 50%;
@@ -771,13 +773,13 @@ button:focus {
 .project-list {
   display: flex;
   flex-wrap: wrap;
-  margin-top: -50px;
+  margin-top: -30px;
   margin-left: -30px;
 }
 
 .project-item {
   flex-basis: calc((100% - 90px) / 3);
-  margin-top: 50px;
+  margin-top: 30px;
   margin-left: 30px;
 }
 
