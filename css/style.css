@@ -23,6 +23,10 @@
 
 /* GENERAL STYLES*/
 
+body {
+  /* padding-top: 80px; */
+}
+
 body,
 a {
   font-family: 'Roboto', sans-serif;
@@ -342,6 +346,7 @@ textarea {
 /* HEADER */
 
 .page-header .conteiner {
+  min-height: 80px;
   display: flex;
   padding-top: 24px;
   padding-bottom: 24px;
@@ -353,7 +358,6 @@ textarea {
   top: 0;
   left: 0;
   width: 100%;
-  min-height: 80px;
   background-color: var(--text-white);
   border-bottom: 1px solid #ececec;
   z-index: 1;
@@ -428,7 +432,6 @@ textarea {
   background-position: center;
   background-repeat: no-repeat;
   max-width: 1600px;
-  height: 600px;
   width: 100%;
   margin: 0 auto;
 }

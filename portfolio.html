@@ -284,9 +284,30 @@
                         </li>
                     </ul>
                 </div>
+                
+                
+                <div class="subscription">
+                    <form name="subscription-form" autocomplete="on" novalidate class="subscription-form">
+                        <label>
+                            <p class="footer-title">Подпишитесь на рассылку</p>
+                            <input type="email" name="email" placeholder="E-mail" class="subscription-input">
+                        </label>    
+                        <button type="submit" class="subscription-btn">Подписаться
+                            <svg class="send-icon">
+                                <use href="./images/sprite.svg#send"></use>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
             </div>
         </section>
     </footer>
+
+        <script>
+            const header = document.querySelector(".page-header");
+            const { height } = header.getBoundingClientRect();
+            document.body.style = `padding-top: ${height}px`;
+        </script>
 </body>
     
 </html>
