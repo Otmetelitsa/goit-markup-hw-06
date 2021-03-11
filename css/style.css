@@ -555,6 +555,7 @@ textarea {
 .modal-input:hover + .icon,
 .modal-input:focus + .icon {
   fill: var(--text-blue);
+  transition: fill 250ms var(--cubic);
 }
 
 .modal-title {
