@@ -485,38 +485,56 @@
                         <use href="./images/sprite.svg#close"></use>
                     </svg>
                 </button>
-        
-                <label class="modal-lable">Имя
-                    <div class="modal-input-conteiner">
-                        <input type="text" name="name" class="modal-input">
-                        <svg class="modal-input-icon">
+                
+                <div class="modal-group">
+                    <label for="name" class="modal-lable">
+                        Имя
+                        <span class="hint"></span>
+                    </label>
+                    <div class="input-wrapper">
+                        <input type="text" name="name" id="name" class="modal-input">
+                        <svg class="icon">
                             <use href="./images/sprite.svg#person"></use>
                         </svg>
                     </div>
                     
-                </label>
-        
-                <label class="modal-lable">Телефон
-                    <div class="modal-input-conteiner">
-                        <input type="tel" name="phone" class="modal-input">
-                        <svg class="modal-input-icon">
+                </div>
+
+                <div class="modal-group">
+                    <label for="phone" class="modal-lable">
+                        Телефон
+                        <span class="hint"></span>
+                    </label>
+                    <div class="input-wrapper">
+                        <input type="tel" name="phone" id="phone" class="modal-input">
+                        <svg class="icon">
                             <use href="./images/sprite.svg#phone2"></use>
                         </svg>
                     </div>
-                </label>
-        
-                <label class="modal-lable">Почта
-                    <div class="modal-input-conteiner">
-                        <input type="email" name="email" class="modal-input">
-                        <svg class="modal-input-icon">
+                    
+                </div>                
+                
+                <div class="modal-group">
+                    <label for="mail" class="modal-lable">
+                        Почта
+                        <span class="hint"></span>
+                    </label>
+                    <div class="input-wrapper">
+                        <input type="email" name="email" id="mail" class="modal-input">
+                        <svg class="icon">
                             <use href="./images/sprite.svg#mail2"></use>
                         </svg>
                     </div>
-                </label>
-        
-                <label class="modal-lable">Комментарий
-                    <textarea class="comment-input" name="comment" rows="5" placeholder="Введите текст"></textarea>
-                </label>
+                    
+                </div>
+                
+                <div class="modal-group">
+                    <label for="comment" class="modal-lable">Комментарий</label>
+                    <textarea class="comment-input" name="comment" rows="5" id="comment" placeholder="Введите текст"></textarea>
+                </div>
+                
+                    
+                
 
                 <label class="modal-lable-check">
                     <input class="check-box" type="checkbox" name="contract" value="contract" checked>
