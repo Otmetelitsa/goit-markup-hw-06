@@ -56,11 +56,11 @@ button {
   background-color: transparent;
 }
 
-button,
+/* button,
 button:active,
 button:focus {
   outline: none;
-}
+} */
 
 /* decoration: none; */
 /* visually-hidden */
