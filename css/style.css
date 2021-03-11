@@ -114,8 +114,8 @@ textarea {
 }
 
 .contact-link,
-.modal-lable,
-.modal-lable-check,
+.modal-label,
+.modal-label-check,
 .features-text,
 .team-text,
 .project-text {
@@ -230,7 +230,7 @@ textarea {
   letter-spacing: 0.03em;
 }
 
-.modal-lable {
+.modal-label {
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -298,7 +298,7 @@ textarea {
   text-align: center;
 }
 
-.modal-lable-check,
+.modal-label-check,
 .footer-address,
 .features-text,
 .footer-link {
@@ -536,13 +536,13 @@ textarea {
   width: 100%;
   padding: 12px;
   padding-left: 42px;
+  transition: border-color 250ms var(--cubic);
 }
 
-.close-icon,
+.modal-form .close-icon,
 .modal-form .icon {
   width: 18px;
   height: 18px;
-  /* fill: var(--text-blue); */
 }
 
 .modal-input:hover,
@@ -550,16 +550,12 @@ textarea {
 .comment-input:hover,
 .comment-input:focus {
   border-color: var(--text-blue);
-  /* transition: border-color 250ms var(--cubic); */
 }
 
-.modal-input:focus + .modal-form .icon {
+.modal-input:hover + .icon,
+.modal-input:focus + .icon {
   fill: var(--text-blue);
 }
-
-/* .modal-lable:not(:nth-child(6)) {
-  margin-bottom: 10px;
-} */
 
 .modal-title {
   margin-bottom: 12px;
@@ -572,6 +568,7 @@ textarea {
   margin-bottom: 20px;
   padding: 12px 16px;
   resize: none;
+  transition: border-color 250ms var(--cubic);
 }
 
 .comment-input::placeholder {
@@ -584,7 +581,7 @@ textarea {
   border-bottom: var(--text-blue);
 }
 
-.modal-lable-check {
+.modal-label-check {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -597,9 +594,9 @@ textarea {
   border-radius: 2px;
 }
 
-/* .check-icon use {
+.check-icon use {
   display: none;
-} */
+}
 
 .check-box {
   display: none;
@@ -611,8 +608,6 @@ textarea {
 
 .check-box:checked + .check-icon use {
   display: block;
-  color: var(--text-blue);
-  /* transition: transform 250ms var(--cubic); */
 }
 
 .close-btn {
@@ -634,7 +629,9 @@ textarea {
 }
 
 .close-btn:hover,
-.close-btn:focus {
+.close-btn:focus,
+.modal-input:hover,
+.modal-input:focus {
   fill: var(--text-blue);
 }
 
