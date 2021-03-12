@@ -551,7 +551,7 @@ textarea {
 }
 
 .input-wrapper:hover .modal-input,
-.input-wrapper:focus .modal-input,
+.modal-input:focus,
 .comment-input:hover,
 .comment-input:focus {
   border-color: var(--text-blue);
@@ -559,7 +559,7 @@ textarea {
 }
 
 .input-wrapper:hover .input-icon,
-.input-wrapper:focus .input-icon {
+.modal-input:focus + .input-icon {
   fill: var(--text-blue);
   transition: fill 250ms var(--cubic);
 }
@@ -631,6 +631,7 @@ textarea {
   border-radius: 50%;
   background: var(--text-white);
   border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
 
 .close-btn:hover use,
@@ -649,6 +650,7 @@ textarea {
   border-radius: 4px;
   border: transparent;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
 }
 
 .modal-send-btn:hover,
