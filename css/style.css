@@ -705,16 +705,10 @@ textarea {
 
 .occupation-list {
   display: flex;
-  flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -50px;
 }
 
-.occupation-img {
+.occupation-img:not(:first-child) {
   margin-left: 30px;
-  margin-top: 50px;
-
-  flex-basis: calc((100% - 90px) / 3);
 }
 
 .occupation-img .thumb {
@@ -977,11 +971,12 @@ textarea {
 
 .buttom-list {
   height: 38px;
-  margin-left: 8px;
   align-items: center;
-
   border-radius: 4px;
   background: var(--back-grey-btn);
+}
+.buttom-list:not(:first-child) {
+  margin-left: 8px;
 }
 
 .project-btn {
