@@ -40,7 +40,8 @@ a,
 h1,
 h2,
 h3,
-p {
+p,
+span {
   margin: 0;
   padding: 0;
 }
@@ -78,7 +79,7 @@ textarea {
 
 /* GROUP STYLES */
 
-.conteiner {
+.container {
   width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
@@ -350,7 +351,7 @@ textarea {
 
 /* HEADER */
 
-.page-header .conteiner {
+.page-header .container {
   display: flex;
   min-height: 80px;
   padding-top: 24px;
@@ -433,7 +434,7 @@ textarea {
 
 /* HERO */
 
-.page-hero .conteiner {
+.page-hero .container {
   max-width: 1600px;
   width: 100%;
   margin: 0 auto;
@@ -898,6 +899,7 @@ textarea {
 }
 
 .footer-title {
+  display: block;
   margin-bottom: 20px;
 }
 
