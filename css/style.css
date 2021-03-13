@@ -535,6 +535,7 @@ textarea {
   top: 50%;
   transform: translateY(-50%);
   left: 15px;
+  transition: fill 250ms var(--cubic);
 }
 
 .modal-input {
